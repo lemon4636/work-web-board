@@ -1,0 +1,8 @@
+.ant-menu {
+  line-height: 28px !important;
+  border: none !important;
+}
+
+.ant-menu-item-selected {
+  font-weight: bold;
+}

@@ -1,0 +1,1 @@
+cp -rf ../dist/* ../../../www/WWB/

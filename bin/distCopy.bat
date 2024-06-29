@@ -1,0 +1,1 @@
+cp -rf C:/Project/nodeProxy/webApp/APS-webApp/dist/* C:/Project/nodeProxy/www/WWB/
