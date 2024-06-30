@@ -14,26 +14,42 @@ export const apps = [
   },
   // {
   //   name: "PocketBook",
-  //   entry: "//" + "localhost:5174" + "/pocket-book",
+  //   entry: "//" + location.host + "/work-web-board/#/Home/PocketBook",
   //   container: "#microAppContainer",
-  //   loader: (loading) => {
-  //     console.log("PocketBook-loader======", loading);
-  //   },
+  //   //   loader: (loading) => {
+  //   //     console.log("PocketBook-loader======", loading);
+  //   //   },
   //   props: {
   //     qiankunWindowURL: new URL(
   //       location.protocol +
-  //         "//" +
-  //         "localhost:5174" +
-  //         "/pocket-book#/Home/PocketBook"
+  //       "//" +
+  //       location.host +
+  //       "/pocket-book#/Home/PocketBook"
   //     ),
   //   },
   // },
+  {
+    name: "WWBold",
+    entry: "//" + location.host + "/work-web-board/#/Home/PocketBook",
+    container: "#microAppContainer",
+    //   loader: (loading) => {
+    //     console.log("PocketBook-loader======", loading);
+    //   },
+    props: {
+      qiankunWindowURL: new URL(
+        location.protocol +
+        "//" +
+        location.host +
+        "/work-web-board/#/Home/PocketBook"
+      ),
+    },
+  },
 ];
 
 const router = apps.map((app) => {
   return {
     path: app.name,
-    Component: HomeMicroAppBox,
+    element: <HomeMicroAppBox key={app.name} app={app} />,
   };
 });
 

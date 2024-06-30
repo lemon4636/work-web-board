@@ -7,42 +7,42 @@ import {
   qiankunWindow,
 } from "vite-plugin-qiankun/dist/helper";
 import getRouter from "./router";
-import { apps as homeMicroApps } from "./router/homeMicroApps";
-import { getHashRouterPath } from "./utils/format";
+// import { apps as homeMicroApps } from "./router/homeMicroApps";
+// import { getHashRouterPath } from "./utils/format";
 import "antd/dist/antd.css";
 import "./utils/axios";
 
 let instance = null;
 function render(props) {
   const { container, qiankunWindowURL } = props;
-  if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-    registerMicroApps(
-      homeMicroApps.map((app) => ({
-        ...app,
-        activeRule: ({ hash }) =>
-          getHashRouterPath(qiankunWindowURL ? qiankunWindowURL.hash : hash) ===
-          `/Home/${app.name}`,
-      })),
-      {
-        beforeLoad: [
-          (app) => {
-            console.log("beforeLoad", app);
-          },
-        ],
-        beforeMount: [
-          (app) => {
-            console.log("beforeLoad", app);
-          },
-        ],
-      }
-    );
-    start({
-      sandbox: {
-        strictStyleIsolation: true,
-        experimentalStyleIsolation: true,
-      },
-    });
-  }
+  // if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+  //   registerMicroApps(
+  //     homeMicroApps.map((app) => ({
+  //       ...app,
+  //       activeRule: ({ hash }) =>
+  //         getHashRouterPath(qiankunWindowURL ? qiankunWindowURL.hash : hash) ===
+  //         `/Home/${app.name}`,
+  //     })),
+  //     {
+  //       beforeLoad: [
+  //         (app) => {
+  //           console.log("beforeLoad", app);
+  //         },
+  //       ],
+  //       beforeMount: [
+  //         (app) => {
+  //           console.log("beforeLoad", app);
+  //         },
+  //       ],
+  //     }
+  //   );
+  //   start({
+  //     sandbox: {
+  //       strictStyleIsolation: true,
+  //       experimentalStyleIsolation: true,
+  //     },
+  //   });
+  // }
   const root = ReactDOM.createRoot(
     container
       ? container.querySelector("#root")
