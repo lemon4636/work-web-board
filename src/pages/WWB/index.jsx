@@ -21,35 +21,31 @@ export default function APS() {
         label,
         children,
         render: Render,
-        renderWrapper: RenderWrapper = ({ children }) => (
-          <div
-            style={{
-              padding: '0 15px',
-              height: 'calc(100vh - 189px)',
-              overflowY: 'scroll',
-            }}
-          >
-            {children}
-          </div>
-        ),
+        // renderWrapper: RenderWrapper = ({ children }) => (
+        //   <div
+        //     style={{
+        //       padding: '0 15px',
+        //       height: 'calc(100vh - 189px)',
+        //       overflowY: 'scroll',
+        //     }}
+        //   >
+        //     {children}
+        //   </div>
+        // ),
         ...reset
       } = tab;
       return (
         <Tabs.TabPane key={key} tab={label} closable={tabs.length !== 1} {...reset}>
-          {Render ? (
-            <div
-              style={{
-                padding: '0 15px',
-                // height: 'calc(100vh - 189px)',
-                height: 'calc(100vh - 109px)',
-                overflowY: 'scroll',
-              }}
-            >
-              <Render {...tabProps} />
-            </div>
-          ) : (
-            <RenderWrapper>{children}</RenderWrapper>
-          )}
+          <div
+            style={{
+              padding: '0 15px',
+              // height: 'calc(100vh - 189px)',
+              height: 'calc(100vh - 109px)',
+              overflowY: 'scroll',
+            }}
+          >
+            {Render ? <Render {...tabProps} /> : children}
+          </div>
         </Tabs.TabPane>
       );
     });
