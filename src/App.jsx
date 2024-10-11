@@ -10,7 +10,7 @@ const {
 } = Layout;
 
 function App() {
-  
+
   return (
     <Layout className='layout'>
       <Header
@@ -68,6 +68,9 @@ function App() {
             </Menu.Item>
             <Menu.Item key='PocketBook'>
               <Link to='PocketBook'>PocketBook记账本</Link>
+            </Menu.Item>
+            <Menu.Item key='WWBold'>
+              <Link to='WWBold'>wwbold</Link>
             </Menu.Item>
           </Menu>
         </div>

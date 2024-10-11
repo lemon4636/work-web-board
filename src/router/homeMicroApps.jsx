@@ -12,25 +12,9 @@ export const apps = [
     //   qiankunWindowURL: new URL(location.protocol + '//' + location.host + '/WWB/#/test1'),
     // },
   },
-  // {
-  //   name: "PocketBook",
-  //   entry: "//" + location.host + "/work-web-board/#/Home/PocketBook",
-  //   container: "#microAppContainer",
-  //   //   loader: (loading) => {
-  //   //     console.log("PocketBook-loader======", loading);
-  //   //   },
-  //   props: {
-  //     qiankunWindowURL: new URL(
-  //       location.protocol +
-  //       "//" +
-  //       location.host +
-  //       "/pocket-book#/Home/PocketBook"
-  //     ),
-  //   },
-  // },
   {
-    name: "WWBold",
-    entry: "//" + location.host + "/work-web-board/#/Home/PocketBook",
+    name: "PocketBook",
+    entry: "//" + location.host + "/pocket-book/#/Home/PocketBook",
     container: "#microAppContainer",
     //   loader: (loading) => {
     //     console.log("PocketBook-loader======", loading);
@@ -40,7 +24,23 @@ export const apps = [
         location.protocol +
         "//" +
         location.host +
-        "/work-web-board/#/Home/PocketBook"
+        "/pocket-book/#/Home/PocketBook"
+      ),
+    },
+  },
+  {
+    name: "WWBold",
+    entry: "//" + location.host + "/WWB/#/test1",
+    container: "#microAppContainer",
+    //   loader: (loading) => {
+    //     console.log("PocketBook-loader======", loading);
+    //   },
+    props: {
+      qiankunWindowURL: new URL(
+        location.protocol +
+        "//" +
+        location.host +
+        "/WWB/#/test1"
       ),
     },
   },

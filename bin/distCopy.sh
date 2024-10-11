@@ -1,1 +1,1 @@
-cp -rf ../dist/* ../../../www/WWB/
+cp -rf ../dist/* ../../../www/WWB-new/

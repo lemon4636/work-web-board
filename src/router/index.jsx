@@ -47,14 +47,14 @@ export default function getRouter(options) {
               </Lazy>
             ),
           },
-          {
-            path: "PocketBook",
-            element: (
-              <Lazy>
-                <PocketBook />
-              </Lazy>
-            ),
-          },
+          // {
+          //   path: "PocketBook",
+          //   element: (
+          //     <Lazy>
+          //       <PocketBook />
+          //     </Lazy>
+          //   ),
+          // },
         ],
       },
     ],

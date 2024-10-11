@@ -140,7 +140,7 @@ export default function TabHome(props) {
 
   useEffect(() => {
     getApsNodeInfo();
-    getUserInfo();
+    // getUserInfo();
     getApsNodeList();
     getBookmarkList();
     getMsgBoxList();
