@@ -417,7 +417,7 @@ export default function TabHome(props) {
           marginRight: '15px',
         }}
       >
-        <Card
+        {/* <Card
           title={
             <p
               style={{
@@ -492,14 +492,6 @@ export default function TabHome(props) {
                   >
                     登录
                   </Button>
-                  {/* <a
-                    onClick={}
-                    style={{
-                      marginLeft: '20px',
-                    }}
-                  >
-                    切換用戶
-                  </a> */}
                   <span
                     style={{
                       marginLeft: '20px',
@@ -545,7 +537,7 @@ export default function TabHome(props) {
               </div>
             </div>
           </Spin>
-        </Card>
+        </Card> */}
         <Card
           title={
             <p
