@@ -70,16 +70,23 @@ export default function DomainMgr() {
               {
                 hostname: "us3.lemonyun.net",
                 ip: '66.103.216.148',
-                size: '2 vCPU, 1GB RAM, 50GB Disk',
+                size: '2 vCPU, 1GB RAM, 50GB Disk, 流量包 - 3072GB/月（带宽：共享1Gbps）',
                 information: 'Los Angeles - DC1 - HS106',
                 creatTime: "2023-10-15"
               },
               {
                 hostname: "us2.lemonyun.net",
                 ip: '74.48.12.156',
-                size: '2 vCPU, 1GB RAM, 40GB Disk',
+                size: '2 vCPU, 1GB RAM, 40GB Disk, 流量包 - 3072GB/月（带宽：共享1Gbps）',
                 information: 'Los Angeles - DC1 - HS18',
                 creatTime: "2023-02-04"
+              },
+              {
+                hostname: "lemonyun.top",
+                ip: '(公) 122.152.237.172 (内) 10.0.8.3 ',
+                size: 'CPU - 2核 内存 - 2GB,系统盘 - SSD云硬盘 50GB,流量包 - 300GB/月（带宽：4Mbps）',
+                information: '广州   |   广州三区',
+                creatTime: "2023-08-26 02:05:02 - 2026-08-26 02:05:02"
               },
             ]}
             columns={[
