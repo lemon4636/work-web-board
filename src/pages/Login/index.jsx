@@ -3,8 +3,18 @@ import { Button, Row, Col, Form, Input, message, Modal } from "antd";
 import { useNavigate } from "react-router-dom";
 import request from "@/api/APS";
 import { useState } from "react";
+import './index.css';
 
 const skinList = [
+  {
+    bg_type: "video",
+    title: "【动态】4K天使素颜",
+    img: "",
+    video_url:
+      "https://static.lejiatech.cn/static2/v4/preview_video/452b39371f950bd848d5d51c106001ff_preview.mp4",
+    video_cover_url:
+      "https://static.lejiatech.cn/static2/v4/preview_img_raw/7048a936b2335e0bce179366d2bd187e.mp4.jpg",
+  },
   {
     bg_type: "video",
     title: "【动态】阳光森林",
@@ -58,15 +68,6 @@ const skinList = [
       "https://static.lejiatech.cn/static2/v4/preview_video/1f0b3635a8b9175338fec93eae33cdff_preview.mp4",
     video_cover_url:
       "https://static.lejiatech.cn/static2/v4/preview_img_raw/0e1a075ba6ab7ed9bbb3659ec125a278.mp4.jpg",
-  },
-  {
-    bg_type: "video",
-    title: "【动态】4K天使素颜",
-    img: "",
-    video_url:
-      "https://static.lejiatech.cn/static2/v4/preview_video/452b39371f950bd848d5d51c106001ff_preview.mp4",
-    video_cover_url:
-      "https://static.lejiatech.cn/static2/v4/preview_img_raw/7048a936b2335e0bce179366d2bd187e.mp4.jpg",
   },
   {
     bg_type: "video",
@@ -467,7 +468,10 @@ export default function Login() {
                   },
                 ]}
               >
-                <Input.Password placeholder="Please input your password" style={{ borderRadius: "10px" }} />
+                <Input.Password placeholder="Please input your password"
+                  style={{
+                    borderRadius: "0px", backgroundColor: "transparent", borderTop: "none", borderLeft: "none", borderRight: "none"
+                  }} />
               </Form.Item>
             </div>
             <div style={{
