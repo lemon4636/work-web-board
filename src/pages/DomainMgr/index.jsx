@@ -72,7 +72,7 @@ export default function DomainMgr() {
                 size: '2 vCPU, 1GB RAM, 50GB Disk, 流量包 - 3072GB/月（带宽：共享1Gbps）',
                 information: 'Los Angeles - DC1 - HS106',
                 creatTime: "2023-10-15",
-                desc: 'cf代理域名us3_cf.lemonyun.net aws的cdn域名d3nm9yd7vw3lkd.cloudfront.net'
+                desc: 'cf代理域名us3_cf.lemonyun.net/lemonyun.net/v2-subscription.lemonyun.net; aws的cdn域名d3nm9yd7vw3lkd.cloudfront.net'
               },
               {
                 hostname: "us2.lemonyun.net",

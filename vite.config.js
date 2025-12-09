@@ -45,15 +45,15 @@ export default ({ mode }) => {
       },
       proxy: {
         "/login": {
-          target: "https://v2-node02.lemonyun.net",
+          target: "https://lemonyun.net",
           changeOrigin: true,
         },
         "/wwb-api": {
-          target: "https://v2-node02.lemonyun.net",
+          target: "https://lemonyun.net",
           changeOrigin: true,
         },
         "/crm-app": {
-          target: "https://v2-node02.lemonyun.net",
+          target: "https://lemonyun.net",
           changeOrigin: true,
         },
       },

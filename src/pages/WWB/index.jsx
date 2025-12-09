@@ -8,7 +8,7 @@ import {
 } from './components/TabComp.jsx';
 import './index.css';
 
-export default function APS() {
+export default function App() {
   // console.log('APSPage props===', props);
 
   const [tabKey, setTabKey] = useState('0');
@@ -73,14 +73,14 @@ export default function APS() {
     newPanes.push(
       item
         ? {
-            ...item,
-            key: newKey,
-          }
+          ...item,
+          key: newKey,
+        }
         : {
-            label: 'APS首頁',
-            render: TabHome,
-            key: newKey,
-          },
+          label: 'APS首頁',
+          render: TabHome,
+          key: newKey,
+        },
     );
     setItems(newPanes);
     setTabKey(newKey);
