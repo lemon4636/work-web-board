@@ -65,21 +65,22 @@ export default function DomainMgr() {
             scroll={{ x: true }}
             // loading={tableLoading}
             rowKey={(row, index) => index}
-
             dataSource={[
               {
                 hostname: "us3.lemonyun.net",
                 ip: '66.103.216.148',
                 size: '2 vCPU, 1GB RAM, 50GB Disk, 流量包 - 3072GB/月（带宽：共享1Gbps）',
                 information: 'Los Angeles - DC1 - HS106',
-                creatTime: "2023-10-15"
+                creatTime: "2023-10-15",
+                desc: 'cf代理域名us3_cf.lemonyun.net aws的cdn域名d3nm9yd7vw3lkd.cloudfront.net'
               },
               {
                 hostname: "us2.lemonyun.net",
                 ip: '74.48.12.156',
                 size: '2 vCPU, 1GB RAM, 40GB Disk, 流量包 - 3072GB/月（带宽：共享1Gbps）',
                 information: 'Los Angeles - DC1 - HS18',
-                creatTime: "2023-02-04"
+                creatTime: "2023-02-04",
+                desc: 'cf的cdn域名us2_cf.lemonyun.net aws的cdn域名d17egxcl74ka24.cloudfront.net'
               },
               {
                 hostname: "lemonyun.top",
@@ -98,6 +99,10 @@ export default function DomainMgr() {
               {
                 title: "服务器名称",
                 dataIndex: "hostname",
+              },
+              {
+                title: "备注",
+                dataIndex: "desc",
               },
               {
                 title: "IP地址",

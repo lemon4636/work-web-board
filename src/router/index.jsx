@@ -8,6 +8,7 @@ const App = React.lazy(() => import("../App"));
 const Login = React.lazy(() => import("../pages/Login"));
 const WWB = React.lazy(() => import("../pages/WWB"));
 const PocketBook = React.lazy(() => import("../pages/PocketBook"));
+const DomainMgr = React.lazy(() => import("../pages/DomainMgr"));
 
 export default function getRouter(options) {
   return createHashRouter(
@@ -38,7 +39,6 @@ export default function getRouter(options) {
             index: true,
             loader: () => redirect("WWB"),
           },
-          ...homeMicroApps,
           {
             path: "WWB",
             element: (
@@ -55,6 +55,15 @@ export default function getRouter(options) {
           //     </Lazy>
           //   ),
           // },
+          {
+            path: "DomainMgr",
+            element: (
+              <Lazy>
+                <DomainMgr />
+              </Lazy>
+            ),
+          },
+          ...homeMicroApps,
         ],
       },
     ],
